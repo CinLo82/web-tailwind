@@ -648,6 +648,12 @@ video {
   flex: none;
 }
 
+@media (max-width: 768px) {
+  .menu-item {
+    flex: 1 1 0%;
+  }
+}
+
 .menu-item-a {
   display: block;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -879,4 +885,25 @@ video {
 
 .group:hover .group-hover\:animate-from-right {
   animation: fromRight 300ms linear;
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .xs\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .xs\:h-36 {
+    height: 9rem;
+  }
+
+  .xs\:flex-col {
+    flex-direction: column;
+  }
 }
