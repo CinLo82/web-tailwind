@@ -48,6 +48,7 @@
         font-family: "TrebuchetMS";
     }
 
+
 }
 
 @layer components {
@@ -61,5 +62,9 @@
     }
     .menu-item-a{
         @apply  block transition duration-200 hover:text-azul-claro transform hover:scale-125
+    }
+    .text-banner{
+        font-family: bebasNeue;
+        text-shadow: 2px 2px 1px black;
     }
 }
