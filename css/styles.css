@@ -685,6 +685,7 @@ video {
 
 .card {
   margin: 1.25rem;
+  height: 20rem;
   flex: 1 1 0%;
   cursor: pointer;
   overflow: hidden;
@@ -710,6 +711,27 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 768px) {
+  .card {
+    margin: 0.5rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    margin: 1.25rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0.5rem;
+    height: 10rem;
+  }
+}
+
 .card-icon{
   font-family: 'WebSymbolsRegular';
   margin-left: auto;
@@ -718,6 +740,7 @@ video {
   display: block;
   height: 8rem;
   width: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   text-align: center;
   font-size: 3rem;
   line-height: 1;
@@ -729,19 +752,55 @@ video {
 }
 
 .group:hover .card-icon {
-  font-size: 4.5rem;
-  line-height: 1;
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes showCardIcon {
+  from {
+    transform: translateY(-200%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.group:hover .card-icon {
+  animation: showCardIcon 300ms linear;
   --tw-text-opacity: 1;
   color: rgb(55 188 249 / var(--tw-text-opacity));
 }
 
-.card-category {
+@media (min-width: 768px) {
+  .card-icon {
+    margin-top: 1.25rem;
+    height: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-icon {
+    margin-top: 3rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-icon {
+    margin-top: 0.75rem;
+    height: 5rem;
+  }
+}
+
+.card-category{
+  font-family: 'Trebuchet MS';
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  height: 3rem;
   width: 100%;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -753,9 +812,38 @@ video {
   transition-duration: 300ms;
 }
 
+@keyframes showCardCategory {
+  from {
+    transform: translateY(-300%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
 .group:hover .card-category {
+  animation: showCardCategory 400ms linear;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .card-category {
+    margin-top: 0px;
+    height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-category {
+    margin-top: 1.25rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .card-description{
@@ -763,20 +851,46 @@ video {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   text-align: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(3 112 185 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms
+  transition-duration: 300ms;
+}
+
+@keyframes showCardDes {
+  from {
+    transform: translateX(-300%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 .group:hover .card-description {
+  animation: showCardDes 500ms linear;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .card-description {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-description {
+    margin-top: 1.25rem;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .float-right {
