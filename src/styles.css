@@ -52,19 +52,93 @@
 }
 
 @layer components {
+    /*Estilos Menu*/
     .menu-item{
         @apply 
             mr-5 
             ml-5 
             tracking-wider 
             backdrop:flex-none
-            xs:flex-1
+            xs:flex-1;
     }
     .menu-item-a{
-        @apply  block transition duration-200 hover:text-azul-claro transform hover:scale-125
+        @apply  
+            block 
+            transition 
+            duration-200 
+            hover:text-azul-claro 
+            transform hover:scale-125;
     }
+
+     /*Estilos Banner*/
     .text-banner{
         font-family: bebasNeue;
         text-shadow: 2px 2px 1px black;
     }
+
+    /*Estilos Tarjetas*/
+    .card{
+        @apply 
+            flex-1
+            bg-white 
+            shadow-md
+            border-gray-200
+            rounded-xl 
+            m-5
+            pl-5
+            pr-5
+            overflow-hidden
+            cursor-pointer
+            transition
+            duration-300 
+            hover:bg-black
+            
+    }
+
+    .card-icon{
+        font-family: 'WebSymbolsRegular';
+        @apply 
+            block
+            w-full
+            h-32
+            text-5xl
+            text-center
+            mt-12
+            mx-auto
+            transition
+            duration-300
+            group-hover:text-azul-claro
+            group-hover:text-7xl
+    
+    }
+
+    .card-category{
+        @apply 
+            w-full
+            h-12
+            text-center
+            text-xl
+            font-bold
+            text-azul-oscuro
+            transition
+            duration-300
+            mt-5
+            mb-5
+            group-hover:text-white
+    }
+
+    .card-description{
+        font-family: 'Trebuchet MS';
+        @apply 
+            text-center
+            text-azul-oscuro
+            transition
+            duration-300
+            text-base
+            mt-5
+            mb-5
+            group-hover:text-white
+
+    }
+
 }
