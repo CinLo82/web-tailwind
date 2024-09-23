@@ -748,7 +748,7 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms
+  transition-duration: 300ms;
 }
 
 .group:hover .card-icon {
@@ -893,6 +893,94 @@ video {
   }
 }
 
+.articles-header{
+  font-family: 'BebasNeue';
+  background: url('../img/pxgray.png'), white;
+  display: block;
+  height: 5rem;
+  width: 100%;
+  padding-top: 1.25rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  --tw-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+  --tw-shadow-colored: 0px 1px 0px var(--tw-shadow-color), 1px 2px 0px var(--tw-shadow-color), 2px 3px 0px var(--tw-shadow-color), 3px 4px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.article-items {
+  margin: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.625rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.article-data {
+  float: right;
+  margin: -0.625rem;
+  height: 2.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.article-data span {
+  margin: 0.625rem;
+}
+
+.article-head {
+  margin: 0.25rem;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.article-head a {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(3 112 185 / var(--tw-text-opacity));
+}
+
+.article-head a:hover {
+  text-decoration-line: underline;
+}
+
+.article-description {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .float-right {
   float: right;
 }
@@ -922,6 +1010,10 @@ video {
   margin-left: 1.5rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .mr-16 {
   margin-right: 4rem;
 }
@@ -942,6 +1034,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -958,6 +1054,10 @@ video {
   height: 7rem;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -966,12 +1066,24 @@ video {
   width: 16rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .transform {
@@ -1231,3 +1343,4 @@ video {
     line-height: 2rem;
   }
 }
+

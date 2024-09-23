@@ -100,6 +100,7 @@
             md:m-2
             lg:h-80
             lg:m-5
+            ;
     }
 
     .card-icon{
@@ -125,6 +126,7 @@
             md:h-20
             lg:mt-12
             lg:h-32
+            ;
     }
 
     .card-category{
@@ -167,8 +169,79 @@
 
             lg:block
             lg:text-base
-            lg:mt-5;
-
+            lg:mt-5
+            ;
     }
 
+    .articles-header{
+        font-family: 'BebasNeue';
+        background: url('../img/pxgray.png'), white;
+        @apply 
+            block
+            w-full
+            h-20
+            text-5xl 
+            text-center 
+            font-medium
+            tracking-wider
+            pt-5
+            shadow-Header3D
+            ;
+    }
+    .article-items{
+        @apply 
+            w-full
+            h-auto
+            border
+            border-gray-200
+            m-10
+            mx-auto
+            p-2.5
+            bg-white
+            text-black
+            shadow-md
+           ;
+    }
+    .article-data{
+        @apply 
+            float-right
+            bg-gray-800
+            h-10
+            leading-6
+            p-2
+            text-white
+            -m-2.5
+            text-sm
+            ;
+    }
+    .article-data span{
+        @apply 
+            m-2.5
+            ;
+    }
+    .article-head{
+        @apply
+            block
+            text-2xl
+            m-1
+            ;
+    }
+    .article-head a{
+        @apply
+            text-azul-oscuro
+            font-semibold
+            hover:underline
+            ;
+    }
+    .article-description{
+        @apply
+            block
+            mt-3
+            mb-3
+            text-base
+            font-sans
+            font-normal
+            ;
+    }
 }
+
