@@ -188,6 +188,7 @@
             shadow-Header3D
             ;
     }
+
     .article-items{
         @apply 
             w-full
@@ -202,6 +203,7 @@
             shadow-md
            ;
     }
+
     .article-data{
         @apply 
             float-right
@@ -214,11 +216,13 @@
             text-sm
             ;
     }
+
     .article-data span{
         @apply 
             m-2.5
             ;
     }
+
     .article-head{
         @apply
             block
@@ -226,6 +230,7 @@
             m-1
             ;
     }
+
     .article-head a{
         @apply
             text-azul-oscuro
@@ -233,6 +238,7 @@
             hover:underline
             ;
     }
+
     .article-description{
         @apply
             block
@@ -243,5 +249,141 @@
             font-normal
             ;
     }
+
+    .aside-header{
+        font-family: 'BebasNeue';
+        background: url('../img/pxgray.png'), white;
+        @apply
+            block
+            h-11
+            leading-10
+            shadow-Header3D
+            text-3xl
+            font-medium
+            tracking-wider
+            pl-3.5
+            pt-1
+            mb-3.5
+        ;
+    }
+
+    .aside-box{
+        @apply
+        w-11/12
+        h-60
+        mx-auto
+        mt-5
+        mb-7
+        pt-1
+        bg-white
+        shadow-box
+        ;
+    }
+
+    .login-icon{
+        font-family: 'WebSymbolsRegular';
+        @apply
+        text-center
+        absolute
+        ml-7
+        mt-1
+        h-8
+    }
+
+    .login-input{
+        @apply
+        block
+        mx-auto
+        mt-5
+        w-11/12
+        h-8
+        border
+        border-gray-300
+        shadow-inner
+        pl-7
+        rounded-md
+        text-gray-500
+        transition
+        duration-300
+        outline-none
+        focus:outline-none
+        focus:text-gray-600
+        ;
+    }
+
+    .login-button{
+        font-family: "TrebuchetMS";
+        @apply
+        w-24
+        h-8
+        text-center
+        mt-5
+        ml-5
+        mb-5
+        text-white
+        text-base
+        border
+        border-azul-oscuro
+        bg-gradient-to-b from-azul-claro to-azul-oscuro
+        rounded-none
+        cursor-pointer
+        transition
+        duration-300
+        hover:shadow-md
+    }
+
+
+    .login-link{
+        @apply
+            block 
+            ml-4
+            text-sm
+            text-gray-600
+            hover:underline
+            hover:text-azul-oscuro
+    }
+
+    .social-icon{
+        font-family: 'WebSymbolsRegular';
+        @apply
+        block 
+        text-gray-700 
+        text-3xl 
+        mt-3 
+        mb-5
+        ml-5
+    }
+
+    .social-text{
+        @apply
+            block 
+            absolute 
+            h-10 
+            pr-2 
+            pl-2 
+            pt-1 
+            ml-16 
+            -mt-14 
+            font-sans 
+            font-bold 
+            tracking-wide 
+            shadow-md 
+            border-4 
+            border-white 
+            text-gray-700
+            bg-gray-100 
+            transition
+            duration-500
+            opacity-0
+            transform
+            -translate-x-3/4
+            cursor-pointer
+
+            group-hover:opacity-100
+            group-hover:transform
+            group-hover:translate-x-1
+            ;
+    }
+
 }
 

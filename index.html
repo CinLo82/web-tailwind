@@ -299,63 +299,92 @@
                 flex-none
                 w-72
                 min-h-full
-                mt-5
                 "
             >
-            <h3>Buscar</h3>
-            <div id="search">
+            <h3 class="aside-header" >Buscar</h3>
+            <div id="search" 
+                class="
+                    w-11/12
+                    h-7
+                    m-2.5
+                    mx-auto    
+                    border
+                    border-gray-200
+                    rounded
+                    shadow-inner
+                "
+            >
                 <form action="">
-                    <input type="text"/>
-                    <input type="button" value="Buscar"/>
-                
-                </form>
-            </div>
-            <h3>Login</h3>
-            <div id="login">
-                <form action="">
-                    <label for="email">Usuario</label>
-                    <input 
-                        type="email" 
-                        id="email" 
+                    <input type="text"
+                        class="
+                            w-11/12
+                            h-6
+                            border-none
+                            pl-1.5
+                            rounded-md
+                            bg-white
+                            text-gray-500
+                            transition
+                            duration-300
+                            outline-none
+                            focus:outline-none
+                        "
                     />
-
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password"/>
-
-                    <input type="submit" value="Entrar"/>
-                    <input type="reset" value="Limpiar">
-
-                    <a href="#">Registrate Aqui</a>
-                    <a href="#">¿Has olvidado tu contraseña?</a>
+                    <input type="button" value="L" 
+                        class="
+                            symbol
+                            h-6
+                            cursor-pointer
+                            text-base
+                            bg-white
+                            border-none
+                            text-gray-500
+                        "
+                    />
                 </form>
             </div>
-            <h3>REDES SOCIALES</h3>
-            <div id="social-media">
-                <div class="twitter">
-                    <a href="#">
-                        Twitter
-                    </a>
-                    <p>Twitter</p>
+            <h3 class="aside-header">Login</h3>
+            <div id="login" class="aside-box">
+                <form action="">
+                    <label for="email" class="login-icon"
+                    >U</label>
+                    <input type="email" id="email" class="login-input"/>
+
+                    <label for="password" class="login-icon text-xl ml-7 mt-6" >w</label>
+                    <input type="password" id="password" class="login-input"/>
+
+                    <input type="submit" value="Entrar" class="login-button"/>
+                    <input type="reset" value="Limpiar" class="login-button">
+
+                    <a href="#" class="login-link"
+                    >Registrate Aqui</a>
+                    <a href="#" class="login-link">¿Has olvidado tu contraseña?</a>
+                </form>
+            </div>
+            <h3 class="aside-header">REDES SOCIALES</h3>
+            <div class="aside-box h-48" id="social-media">
+                <div class="twitter group">
+                    <a href="#" class="social-icon">t</a>
+                    <p class="social-text">Twitter</p>
                 </div>
 
-                <div class="facebook"></div>
-                    <a href="#">
-                        Facebook
+                <div class="group facebook">
+                    <a href="#" class="social-icon">
+                        f
                     </a>
-                    <p>Facebook</p>
+                    <p class="social-text">Facebook</p>
                 </div>
 
-                <div class="youtube"></div>
-                    <a href="#">
-                        Youtube
+                <div class="group youtube" >
+                    <a href="#" class="social-icon">
+                        y
                     </a>
-                    <p>Youtube</p>
+                    <p class="social-text">Youtube</p>
                 </div>
             </div>
-            <h3>PATROCINADORES</h3>
+            <h3 class="aside-header">PATROCINADORES</h3>
         
-            <div class="sponsor"></div>
-            
+            <div class="aside-box" id="sponsor"></div>
         </aside>
         <!--Fin Barra Lateral-->
 
