@@ -206,14 +206,20 @@
 
     .article-data{
         @apply 
-            float-right
+            w-full
+            float-none
             bg-gray-800
             h-10
             leading-6
             p-2
             text-white
-            -m-2.5
             text-sm
+            mt-2 
+            mb-2 
+            lg:w-auto 
+            lg:float-right 
+            lg:mt-0 
+            lg:mb-0 
             ;
     }
 
@@ -269,67 +275,67 @@
 
     .aside-box{
         @apply
-        w-11/12
-        h-60
-        mx-auto
-        mt-5
-        mb-7
-        pt-1
-        bg-white
-        shadow-box
-        ;
+            w-11/12
+            h-60
+            mx-auto
+            mt-5
+            mb-7
+            pt-1
+            bg-white
+            shadow-box
+            ;
     }
 
     .login-icon{
         font-family: 'WebSymbolsRegular';
         @apply
-        text-center
-        absolute
-        ml-7
-        mt-1
-        h-8
+            text-center
+            absolute
+            ml-7
+            mt-1
+            h-8
     }
 
     .login-input{
         @apply
-        block
-        mx-auto
-        mt-5
-        w-11/12
-        h-8
-        border
-        border-gray-300
-        shadow-inner
-        pl-7
-        rounded-md
-        text-gray-500
-        transition
-        duration-300
-        outline-none
-        focus:outline-none
-        focus:text-gray-600
-        ;
+            block
+            mx-auto
+            mt-5
+            w-11/12
+            h-8
+            border
+            border-gray-300
+            shadow-inner
+            pl-7
+            rounded-md
+            text-gray-500
+            transition
+            duration-300
+            outline-none
+            focus:outline-none
+            focus:text-gray-600
+            ;
     }
 
     .login-button{
         font-family: "TrebuchetMS";
         @apply
-        w-24
-        h-8
-        text-center
-        mt-5
-        ml-5
-        mb-5
-        text-white
-        text-base
-        border
-        border-azul-oscuro
-        bg-gradient-to-b from-azul-claro to-azul-oscuro
-        rounded-none
-        cursor-pointer
-        transition
-        duration-300
-        hover:shadow-md
+            w-24
+            h-8
+            text-center
+            mt-5
+            ml-5
+            mb-5
+            text-white
+            text-base
+            border
+            border-azul-oscuro
+            bg-gradient-to-b from-azul-claro to-azul-oscuro
+            rounded-none
+            cursor-pointer
+            transition
+            duration-300
+            hover:shadow-md
     }
 
 
@@ -346,12 +352,12 @@
     .social-icon{
         font-family: 'WebSymbolsRegular';
         @apply
-        block 
-        text-gray-700 
-        text-3xl 
-        mt-3 
-        mb-5
-        ml-5
+            block 
+            text-gray-700 
+            text-3xl 
+            mt-3 
+            mb-5
+            ml-5
     }
 
     .social-text{
@@ -366,10 +372,10 @@
             -mt-14 
             font-sans 
             font-bold 
-            tracking-wide 
-            shadow-md 
-            border-4 
-            border-white 
+            tracking-wide
+            shadow-md
+            border-4
+            border-white
             text-gray-700
             bg-gray-100 
             transition

@@ -930,9 +930,11 @@ video {
 }
 
 .article-data {
-  float: right;
-  margin: -0.625rem;
+  float: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   height: 2.5rem;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
   padding: 0.5rem;
@@ -940,6 +942,15 @@ video {
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .article-data {
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: auto;
+  }
 }
 
 .article-data span {
@@ -1588,6 +1599,10 @@ video {
 
   .xs\:h-36 {
     height: 9rem;
+  }
+
+  .xs\:w-full {
+    width: 100%;
   }
 
   .xs\:flex-col {
